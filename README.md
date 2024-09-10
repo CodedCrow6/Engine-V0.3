@@ -1,0 +1,1 @@
+A 2d arcade style fighting game made using pygame-ce as the underlaying framework ,with a line of characters from multiple main stream fighting game universes .Created mostly to see whether a full commercial quality game can be produced using pygame-ce and as a means to improve my coding ablities
