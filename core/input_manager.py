@@ -8,8 +8,8 @@ class InputManager:
         self.system_key_map = key_map
         self.key_map = key_map
         self.key_states = key_state
-        self.repeat_interval = repeat_interval  # Interval in seconds
-        self.last_press_time = {key: 0 for key in key_map.values()}  # Track last press time for each key
+        self.key_release_delay = 0.5
+        self.counter_start = pg.time.get_ticks()
 
         self.mouse_button_states = [
             False,
@@ -43,9 +43,12 @@ class InputManager:
         if event.type == pg.KEYDOWN:
             if event.unicode in self.key_map.values():
                 self.key_states[event.unicode] = True
+                self.counter_start = pg.time.get_ticks()
         elif event.type == pg.KEYUP:
             if event.unicode in self.key_map.values():
-                self.key_states[event.unicode] = False
+                if pg.time.get_ticks() - self.counter_start >= self.key_release_delay:
+                    self.key_states[event.unicode] = False
+                
 
         print(self.key_states)
 

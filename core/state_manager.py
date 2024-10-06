@@ -7,7 +7,7 @@ from states.battle import Battle
 from core.config import RESOLUTION
 from ui.grid_example import GridExample
 from data_files.characters import CHARACTER_NAMES
-from data_files.levels import LEVEL_NAMES
+
 
 
 class StateManager:
@@ -16,7 +16,7 @@ class StateManager:
         self.input_manager = input_manager
         self.state_index = 0
         self.states = []
-        self.persistancy = [CHARACTER_NAMES[0],CHARACTER_NAMES[1],LEVEL_NAMES[0]]
+        self.persistancy = [CHARACTER_NAMES[0],CHARACTER_NAMES[1],0]
         self.init_states()
         self.active_state = self.states[self.state_index]
         self.previous_state = ""

@@ -17,7 +17,7 @@ attributes = {
 
 Attributes = {
     'Beerus': {
-       'velocity': 20,
+       'velocity': 25,
         'Strength_factor':91,
         'Ki_power':80,
         'technique':78,

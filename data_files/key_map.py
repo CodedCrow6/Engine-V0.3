@@ -7,13 +7,13 @@ key_map = {
     "move_up": 'w',
     "move_down": 's',
     "light_punch": 'j',
-    "heavy_punch": 'k',
-    "light_kick": 'l',
-    "heavy_kick": '0',
+    "heavy_punch": 'u',
+    "light_kick": 'o',
+    "heavy_kick": 'k',
     "ki_charge": 'y',
     "ki_blast_one_hand": 't',
     "block": ';',
-    "special_attack": 'o',
+    "special_attack": 'h',
     "grab": 'p',
     "pause": '\r',  # RETURN key
     "toggle_fly": 'z'  # Random unicode value for LSHIFT
