@@ -3,10 +3,14 @@ This is a custom-built fighting game engine designed to bring much needed featur
 
 # IMPLEMENTED FEATURES: #
 
- *Customizable Characters* 
+ *Customizable Characters*- 
   Using a Modular approach to handling character attributes, states, and attacks. This "bolt-on" approach to character creation allows for the simplified addtion/removal of character related mechanics.
                               Simply add to the list of imports items such as healthbars , special meters and custom object animators. Create a balanced and unique gaming experience by introducing character specific attributes , ablities and buffs .This can be achieved                                 by adding the fields into the characters data file, which can be formatted using json like syntax.
 
   Automated Sprite Extraction system - A fully functional automated spritesheet classification and sprite animation extraction tool, which serves to take the hasstle out of manually processing the locations of every frame on a spritesheet.Relying on colorkeys the tool                                                                         iterates through each pixel to determine the bounding rectuangle of the sprite , this ensures that if properly configured ,the result is a seamless animation.
 
   Modular and customizable Game State Machine - To be continued !!!!!!!!!!!!!!!!!!
+
+# Features planned for future implementation #
+
+ There are multiple boat loads of planned features already spipulated within the design docs ,With time i shall revial them all here.As soon as i find some more time to force creative writing(or maybe not so creative writing ) out of my nogging into this readme .
